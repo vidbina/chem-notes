@@ -1,0 +1,72 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{multicol}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            %bookmarks=true,
+            pdfauthor={David Dani\"el Asabina},
+            pdftitle={Fundamentals of Chemistry},
+            pdfsubject={Chemistry},
+            pdflang={en-US},
+            pdfcreator={David Dani\"el Asabina},
+            pdfkeywords={chemistry, chemical engineering},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+\author{
+  Asabina, David \texttt{vid@bina.me}
+}
+\date{\today}
+\title{Fundamentals of Chemistry}
+
+\begin{document}
+  \maketitle
+  \input{abstract}
+
+  { % toc
+  \hypersetup{linkcolor=black}
+  \setcounter{tocdepth}{3}
+  %\tableofcontents
+  }
+
+  \begin{multicols}{2}
+    \input{notes}
+
+    \bibliographystyle{ieeetr}
+    \bibliography{references}
+  \end{multicols}
+\end{document}
