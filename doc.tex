@@ -6,6 +6,7 @@
 \usepackage{multicol}
 \usepackage{siunitx}
 \usepackage{mhchem}
+\usepackage{makeidx}
 \usepackage{fixltx2e} % provides \textsubscript
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -55,6 +56,8 @@
 \date{\today}
 \title{Fundamentals of Chemistry}
 
+\makeindex
+
 \begin{document}
   \maketitle
   \input{abstract}
@@ -71,4 +74,6 @@
     \bibliographystyle{ieeetr}
     \bibliography{references}
   \end{multicols}
+
+  \printindex
 \end{document}
