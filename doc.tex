@@ -1,10 +1,20 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[9pt,a4paper]{IEEEtran}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{makeidx}
 \usepackage{fixltx2e} % provides \textsubscript
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+
+% Define custom SI units
+\DeclareSIUnit\atomicmassunit{u}
+\DeclareSIUnit\elementarycharge{e}
+
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -53,20 +63,29 @@
 \date{\today}
 \title{Fundamentals of Chemistry}
 
+\makeindex
+
 \begin{document}
   \maketitle
-  \input{abstract}
+
+  \begin{abstract}
+    \input{abstract}
+  \end{abstract}
+
+  \begin{IEEEkeywords}
+    \input{keywords}
+  \end{IEEEkeywords}
 
   { % toc
   \hypersetup{linkcolor=black}
   \setcounter{tocdepth}{3}
-  %\tableofcontents
+  \tableofcontents
   }
 
-  \begin{multicols}{2}
-    \input{notes}
+  \input{notes}
 
-    \bibliographystyle{ieeetr}
-    \bibliography{references}
-  \end{multicols}
+  \bibliographystyle{ieeetr}
+  \bibliography{references}
+
+  \printindex
 \end{document}
