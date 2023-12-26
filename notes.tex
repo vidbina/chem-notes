@@ -1,25 +1,46 @@
 \section{Atom Fundamentals}
-\subsection{Description}
-Atoms\index{atom} are considered the smallest units of ordinary matter with the
-properties of a chemical element and are defined in terms of their constituing
-parts - neutrons, protons and electrons.
 
-\subsection{Composition}
-Atoms are composed of a nucleus and negatively charged electrons which are
-bound to the nucleus through its electromagnetic force.
-Nucleons, which are either positively charged protons or neutral neutrons,
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Tip]
+Complete the
+\href{https://brilliant.org/courses/molecular-representations/}{Molecules course
+on Brilliant} as it is one of the best resources out there to quickly ease into
+the domain.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Warning] I
+wrote this as a refresher to my future that I should be able to read in an hour
+or so to recall previous knowledge. My idiolect may not parse well in your
+brain so buyer beware!
+\end{tcolorbox}
+
+\subsection{Atom Definition} Atoms\index{atom} are considered the smallest units
+of ordinary matter with the properties of a chemical element and are defined in
+terms of their constituting parts - neutrons, protons and electrons.
+
+\subsection{Atom Composition} Atoms are composed of a nucleus\index{nucleus} and
+negatively charged electrons\index{electron}. Electrons are bound to the nucleus
+by the electromagnetic force.  Nucleons\index{nucleon}, which are either
+positively charged protons\index{proton} or neutral neutrons\index{neutron},
 make up the nucleus of an atom.
 
-An atom's composition will determine among other things, the charge, weight and
-type of atom.
+\subsection{Atom Properties} An atom's composition will determine among other
+things, the charge, weight and type and isotope of an atom. Variations in the
+proton count render an atom a different element. Variations in the neutron
+count of an atom will result to different isotopes\index{isotope}. Variations in
+the electron count produce ions\index{ion}.
 
-\subsubsection{Type}
-For a given element, all atoms will contain a fixed number of protons in its
-nucleus.
-This number of protons in an atom - commonly referred to as the atomic number
-\index{atomic number} $Z$ - uniquely identifies the atom's type and forms the
-basis for the organization of elements as familiarized through the period table
-of elements.
+\begin{table}[h] \caption{Effect of Number Change on Atom}
+\begin{tabularx}{\linewidth}{|X|X|} \hline Count Change & Result \\ \hline
+Proton & Element \\ Neutron & Isotope \\ Electron & Ion \\ \hline \end{tabularx}
+\end{table}
+
+
+\subsubsection{Element (Type)} For a given element, all atoms will contain the same
+number of protons in its nucleus.  This number of protons in an atom - commonly
+referred to as the atomic number \index{atomic number} $Z$ - uniquely identifies
+the element of the atom or in layperson terms, the type of the material, and
+forms the basis for the organization of elements as familiarized through the
+periodic table of elements.
 
 Carbon is the element defined by six protons in its nucleus and is represented
 as \ce{_6}C. Since the atomic number is unique to the element one may omit the
@@ -27,29 +48,45 @@ atomic number in notation and represent carbon simply as \ce{}C without
 impairing clarity, however; in this text the convention is held to present the
 atomic number of an element regardless how redundant\footnote{Representing the
 atomic number along with the element eliminates the need to lookup an element's
-atomic number when not acquainted with a particial element}.
+atomic number when not acquainted with a particular element}.
 
-\subsubsection{Isotopes}
-The number of protons for a given element are fixed, however; the number of
-neutrons found within a nucleus i.e.\ neutron number $N$ of an element may vary
-depending on the isotope of the element.
+\subsubsection{Isotope} The number of protons for a given element is fixed,
+however; the number of neutrons found within a nucleus i.e.\ neutron number $N$
+of an element may vary depending on the isotope of the element.
 
-The atomic mass number $A$, also known as the mass number or nucleon number,
-represents the number of nucleons in an atom and is essentially the sum of
-neutrons $N$ and protons $Z$.
+The atomic mass number\index{atomic mass number} $A$, also known as the mass
+number or \index{nucleon number}, represents the number of nucleons in an atom
+and is essentially the sum of neutrons $N$ and protons $Z$.
 
 $$A = N + Z$$
 
-Carbon's most common isotope -  carbon-12 (\ce{^{12}_{6}}C) - has an
-atomic mass number of 12 ($A = 12$) with an atomic number of 6 ($Z = 6$)
-leading to the conclusion that the carbon-12 isotope contains $N=A-Z=12-6$
-neutrons.
+Since the proton count is fixed for an element, isotopes for a given element
+require variations in neutron count in order to affect the nucleon number.
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+Since the mass of an electron is approximately 1/1836 of the mass of a proton or
+neutron, we often disregarded it when calculating atomic mass. For the sake of
+simplicity, we therefore calculate the atomic mass number $A$ as the sum of the
+number of protons $Z$ and neutrons $N$ in an atom. Observe the following table
+for more precise values for the masses of the atomic components:
+\begin{tabularx}{\linewidth}{|X|X|}
+\hline Component & Mass (kg) \\ \hline
+Proton & $1.6726219 \times 10^{-27}$ \\
+Neutron & $1.674927471 \times 10^{-27}$ \\
+Electron & $9.10938356 \times 10^{-31}$ \\
+\hline
+\end{tabularx}
+\end{tcolorbox}
+
+Carbon's most common isotope -  carbon-12 (\ce{^{12}_{6}}C) - has an atomic mass
+number of 12 ($A = 12$) with an atomic number of 6 ($Z = 6$) leading to the
+conclusion that the carbon-12 isotope contains $N=A-Z=12-6=6$ neutrons.
 
 In the case of carbon, 3 isotopes \ce{^{12}_{6}}C, \ce{^{13}_{6}}C and
 \ce{^{14}_{6}}C are found naturally with the atomic number of 6 and the
 respective atomic mass numbers of 12, 13 and 14.
 
-\subsubsection{Charge}
+\subsubsection{Ions (Charge)}
 
 Electrons and protons determine the electric charge of an atom. Electrons
 exhibit a negative charge \SI{-1}{\elementarycharge}, while protons exhibit a
@@ -58,103 +95,98 @@ positive charge \SI{1}{\elementarycharge}.
 A neutral atom contains an equal number of electrons to protons, while an ion
 contains an imbalance between electrons to protons resulting to non-zero charge.
 In the case of a net positive charge, an atom is referred to as a
-cation\index{cation}, while an atom with a net negative charge is referred to
-as an anion\index{anion}.
+cation\index{cation}, while an atom with a net negative charge is referred to as
+an anion\index{anion}.
 
-Creation of an ion is accomplished through chemical or physical means through
-a process referred to as ionization.
+Creation of an ion is accomplished through chemical or physical means. Through
+chemical means, ions can be produced through acid-based reactions, dissolution,
+ionization (of gases) and redox reactions. Physical means of producing ions
+include electrolysis, ionizing radiation, heat and high-energy collisions.
 
-\subsection{Behavior}
-Atoms, typically sized around \SI{100}{\pico\meter}, are so small that
-classical physics fails to accurately describe their behavior due to quantum
-effects.
+\subsection{Behavior} Atoms, typically sized around \SI{100}{\pico\meter}, are
+so small that classical physics fails to accurately describe their behavior due
+to quantum effects.
 
-\subsection{Mass and Weight}
-The colloquial usage of the term ``weight'' is technically incorrect as the
-intent is actually to use the term ``mass''.
+\subsection{Mass and Weight} The colloquial usage of the term ``weight'' is
+technically incorrect as the intent is actually to use the term ``mass''.
 
 In physics mass is measured in grams (\si{\gram}) while weight is measured in
-Newtons (\si{\newton}).
-Weight\index{weight} $W = m\cdot g$ represents the force on a mass due to
-gravity, as such weight is very dependent on the gravitational pull that a
-mass is subjected to.
-The accelleration of an object due to its subjection to a gravitational pull is
-referred to as gravity\index{gravity} $g = a_g = \frac{v}{t} = \frac{d}{t^2}$
-which, on the surface of Earth, results to an earthbound acceleration of about
+Newtons (\si{\newton}).  Weight\index{weight} $W = m\cdot g$ represents the
+force on a mass due to gravity, as such weight is very dependent on the
+gravitational pull that a mass is subjected to.  The accelleration of an object
+due to its subjection to a gravitational pull is referred to as
+gravity\index{gravity} $g = a_g = \frac{v}{t} = \frac{d}{t^2}$ which, on the
+surface of Earth, results to an earthbound acceleration of about
 \SI{9.8}{\meter\second^{-2}}.
 
 In chemistry mass is expressed in atomic mass units (\si{\atomicmassunit}) or
 Daltons (\si{\dalton}).
-Atomic mass units\index{atomic mass unit} have been standardized to the
-unified atomic mass unit \si{\atomicmassunit} in 1961 to refer to the mass of
-\ce{^{12}}C (see equation \ref{eq:amu-def}) in order to address the
-complication and confusion that arrose out of chemists and physicists
-upholding different standards
-\footnote{Within Chemistry naturally ocurring oxygen (including the heavier
-\ce{^{17}}O and \ce{^{18}}O) were considered as a reference for 16 atomic mass
-units whereas in Physics the pure isotopic \ce{^{16}}O was considered the
-reference for the same 16 atomic mass units, accounting for a difference of
-\num{1.000282} at times between the two fields.} for atomic mass units (amu)
-prior.
 
-\begin{equation}\label{eq:amu-def}
-  \mathrm {u} =
-  m_{\mathrm {u} }=\frac {1}{12} m_a(\mathrm{ \ce{^{12}}C })
-\end{equation}
+\begin{equation}\label{eq:amu-def} \mathrm {u} = m_{\mathrm {u} }=\frac {1}{12}
+m_a(\mathrm{ \ce{^{12}}C }) \end{equation}
 
-Quarks are elementary particles that combine to form composite particles called
-hadrons, of which protons and neutrons are the most stable. Hadrons are held
-together by the strong force and can be classified into baryons, which are
-composed of 3 quarks and mesons which are composed of one quark and antiquark.
+Atomic mass units\index{atomic mass unit} have been standardized to the unified
+atomic mass unit \si{\atomicmassunit} in 1961 to refer to the mass of
+\ce{^{12}}C (see equation \ref{eq:amu-def}) in order to address the complication
+and confusion that arose out of chemists and physicists upholding different
+standards for atomic mass units (amu) prior.
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black]
+Within Chemistry naturally occurring oxygen (including the heavier \ce{^{17}}O and \ce{^{18}}O) were
+considered as a reference for 16 atomic mass units whereas in Physics the pure
+isotopic \ce{^{16}}O was considered the reference for the same 16 atomic mass
+units, accounting for a difference of \num{1.000282} at times between the two
+fields.
+\end{tcolorbox}
+
+Quarks\index{quark} are elementary particles that combine to form composite
+particles called hadrons\index{hadron}, of which protons and neutrons are the
+most stable.  Hadrons are held together by the \index{strong force} and can be
+classified into baryons\index{baryon}, which are composed of 3 quarks and
+mesons\index{meson} which are composed of one quark and antiquark.
 
 Protons and neutrons are baryons and therefore participate in the strong
 interaction.
 
-The mass of an atom is largely determined by baryons as is most of the mass
-in the visible universe. The rest masses of a quark inside a proton baryon
-contribute to about a percent of the weight of a proton while the quantum
-chromodynamics binding energy, which includes the kinetic energy of the quarks
-and the energy of the gluon fields that bind the quarks together, determines
-the remaining bulk of the mass.
+The mass of an atom is largely determined by baryons as is most of the mass in
+the visible universe. The rest mass of a quark only contributes a small fraction
+of the mass of a proton while the quantum chromodynamics binding energy, which
+includes the kinetic energy of the quarks and the energy of the gluon fields that bind the quarks together, determines the remaining bulk of the mass.
 
 Both protons and neutrons have a mass close to a single atomic mass unit.
 
 %Electrons, being leptons of the charged variety, do not undergo strong
 %interactions
 
-Since atoms operate at a quantum level, they are subjected to dynamics that
-are predominantly dictated by forces other than gravitational force.
-Postulating the notion of ``weight'' in a classical mechanical sense
-is somewhat of a futile exercise, therefore relative atomic weight is a
-unitless quantity defined by the weighted average of the atomic mass of the
-different isotopes for an element, by abundance.
+Since atoms operate at a quantum level, they are subjected to dynamics that are
+predominantly dictated by forces other than gravitational force.  Postulating
+the notion of ``weight'' in a classical mechanical sense is somewhat of a futile
+exercise, therefore relative atomic weight is a unitless quantity defined by the
+weighted average of the atomic mass of the different isotopes for an element, by
+abundance.
 
 For a given isotope $i$ of element $\mathrm E$ in material $P$, one can
 calculate the atomic weight in reference to the atomic mass of \ce{^{12}_{6}}C
 as represented by equation \ref{eq:atomicweightforisotope}.
 
-\begin{equation}\label{eq:atomicweightforisotope}
-  A_r(\mathrm { \ce{^i}E })_P =
-  \frac{ m_a(\mathrm { \ce{^i}E })_P }{ m_a(\mathrm { \ce{^{12}}C })/12 } =
-  \frac{ m_a(\mathrm { \ce{^i}E })_P }{ \si{\dalton} }
-\end{equation}
+\begin{equation}\label{eq:atomicweightforisotope} A_r(\mathrm { \ce{^i}E })_P =
+\frac{ m_a(\mathrm { \ce{^i}E })_P }{ m_a(\mathrm { \ce{^{12}}C })/12 } = \frac{
+m_a(\mathrm { \ce{^i}E })_P }{ \si{\dalton} } \end{equation}
 
 Determining the atomic weight for element $\mathrm E$ in material $P$,
-$A_r(\mathrm E)_P$, demands the factoring of the isotopic abundance
-$x(\mathrm { \ce{^{i}E} })_P$ and the atomic weight of the given isotope
-$A_r(\mathrm { \ce{^i}E })_P$.
+$A_r(\mathrm E)_P$, demands the factoring of the isotopic abundance $x(\mathrm {
+\ce{^{i}E} })_P$ and the atomic weight of the given isotope $A_r(\mathrm {
+\ce{^i}E })_P$.
 
-\begin{equation}\label{eq:atomicweightforelement}
-  A_r(\mathrm E)_P =
-  \sum [x(\mathrm { \ce{^i}E })_P \times A_r( \mathrm { \ce{^i}E } )_P]
-\end{equation}
+\begin{equation}\label{eq:atomicweightforelement} A_r(\mathrm E)_P = \sum
+[x(\mathrm { \ce{^i}E })_P \times A_r( \mathrm { \ce{^i}E } )_P] \end{equation}
 
 The standard atomic weight of carbon is \num{12.011}\cite{atomic-weights-2013},
 a value that is closer to \num{12} than \num{13} or \num{14} suggesting that
-\ce{^{12}_{6}}C is the more abundant or common isotope of carbon found in
-normal terrestrial materials. In fact, carbon 12 accounts for 99\% of carbon
-on Earth. Carbon-13 only represents 1\% of carbon while carbon-14 is only
-encountered in trace amounts at a ratio of 1 to 1.5 per \num{1e12} of carbon
-atoms in the atmosphere.
+\ce{^{12}_{6}}C is the more abundant or common isotope of carbon found in normal
+terrestrial materials. In fact, carbon 12 accounts for 99\% of carbon on Earth.
+Carbon-13 only represents 1\% of carbon while carbon-14 is only encountered in
+trace amounts at a ratio of 1 to 1.5 per \num{1e12} of carbon atoms in the
+atmosphere.
 
 % \subsection{Models}
